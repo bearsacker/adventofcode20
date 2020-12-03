@@ -21,9 +21,7 @@ public class Map {
             countTrees += getTile(position.x, position.y) ? 1 : 0;
 
             position.add(direction);
-            if (position.x >= getWidth()) {
-                position.x = position.x - getWidth();
-            }
+            position.x %= getWidth();
         }
 
         return countTrees;
@@ -38,6 +36,10 @@ public class Map {
     }
 
     public int getWidth() {
+        if (map.isEmpty()) {
+            return 0;
+        }
+
         return map.get(0).length();
     }
 
