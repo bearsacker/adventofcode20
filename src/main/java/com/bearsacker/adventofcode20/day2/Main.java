@@ -22,8 +22,8 @@ public class Main {
             Matcher matcher = REGEX.matcher(line);
             if (matcher.matches()) {
                 String password = matcher.group(4);
-                Policy policy = new Policy(matcher.group(3).charAt(0), parseInt(matcher.group(1)), parseInt(matcher.group(2)));
-                NewPolicy newPolicy = new NewPolicy(matcher.group(3).charAt(0), parseInt(matcher.group(1)), parseInt(matcher.group(2)));
+                FirstPolicy policy = new FirstPolicy(matcher.group(3).charAt(0), parseInt(matcher.group(1)), parseInt(matcher.group(2)));
+                SecondPolicy newPolicy = new SecondPolicy(matcher.group(3).charAt(0), parseInt(matcher.group(1)), parseInt(matcher.group(2)));
 
                 countValidPasswordFirstPolicy += policy.checkPassword(password) ? 1 : 0;
                 countValidPasswordSecondPolicy += newPolicy.checkPassword(password) ? 1 : 0;

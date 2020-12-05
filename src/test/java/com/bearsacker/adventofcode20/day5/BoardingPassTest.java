@@ -13,11 +13,6 @@ public class BoardingPassTest {
         BoardingPass b2 = new BoardingPass("FFFBBBFRRR");
         BoardingPass b3 = new BoardingPass("BBFFBBFRLL");
 
-        System.out.println(b);
-        System.out.println(b1);
-        System.out.println(b2);
-        System.out.println(b3);
-
         assertEquals(357, b.getSeatId());
         assertEquals(567, b1.getSeatId());
         assertEquals(119, b2.getSeatId());

@@ -1,7 +1,7 @@
 package com.bearsacker.adventofcode20.day2;
 
 
-public class NewPolicy {
+public class SecondPolicy {
 
     private int firstOccurence;
 
@@ -9,7 +9,7 @@ public class NewPolicy {
 
     private char character;
 
-    public NewPolicy(char character, int firstOccurence, int secondOccurence) {
+    public SecondPolicy(char character, int firstOccurence, int secondOccurence) {
         this.character = character;
         this.firstOccurence = firstOccurence;
         this.secondOccurence = secondOccurence;

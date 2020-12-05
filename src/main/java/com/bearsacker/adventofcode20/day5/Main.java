@@ -8,7 +8,6 @@ import java.util.Collections;
 
 public class Main {
 
-    @SuppressWarnings("unchecked")
     public static void main(String[] args) throws IOException {
         ArrayList<BoardingPass> boardingPass = new ArrayList<>();
 

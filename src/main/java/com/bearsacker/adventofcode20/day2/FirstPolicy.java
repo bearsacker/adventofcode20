@@ -1,7 +1,7 @@
 package com.bearsacker.adventofcode20.day2;
 
 
-public class Policy {
+public class FirstPolicy {
 
     private int min;
 
@@ -9,7 +9,7 @@ public class Policy {
 
     private char character;
 
-    public Policy(char character, int min, int max) {
+    public FirstPolicy(char character, int min, int max) {
         this.character = character;
         this.min = min;
         this.max = max;
