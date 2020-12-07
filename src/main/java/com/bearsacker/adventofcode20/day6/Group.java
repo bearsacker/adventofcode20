@@ -12,7 +12,7 @@ public class Group {
         questions = new HashMap<>();
 
         String[] values = rawData.split(" ");
-        numberPersons = values.length - 1;
+        numberPersons = values.length;
 
         for (String question : values) {
             for (int i = 0; i < question.length(); i++) {

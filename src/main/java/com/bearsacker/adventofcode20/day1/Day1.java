@@ -9,7 +9,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Main {
+public class Day1 {
 
     public static int find(int wantedSum, List<Integer> numbers, int maxDepth) {
         return find(wantedSum, numbers, maxDepth, 0, new ArrayList<>(), 0);

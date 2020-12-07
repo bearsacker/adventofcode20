@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class Main {
+public class Day5 {
 
     public static void main(String[] args) throws IOException {
         ArrayList<BoardingPass> boardingPass = new ArrayList<>();

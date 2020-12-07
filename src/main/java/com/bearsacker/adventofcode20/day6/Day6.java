@@ -5,7 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class Main {
+public class Day6 {
 
     public static void main(String[] args) throws IOException {
         ArrayList<Group> groups = new ArrayList<>();
@@ -15,7 +15,7 @@ public class Main {
         String groupData = "";
         String line = reader.readLine();
         do {
-            groupData += " " + line;
+            groupData += line + " ";
 
             if (line.isEmpty()) {
                 groups.add(new Group(groupData));
@@ -29,8 +29,8 @@ public class Main {
 
         reader.close();
 
-        System.out.println("Part 1: counts: " + groups.stream().map(x -> x.countsAnyone()).reduce(0, (a, b) -> a + b));
-        System.out.println("Part 2: counts: " + groups.stream().map(x -> x.countsEveryone()).reduce(0, (a, b) -> a + b));
+        System.out.println("Part 1: " + groups.stream().map(x -> x.countsAnyone()).reduce(0, (a, b) -> a + b));
+        System.out.println("Part 2: " + groups.stream().map(x -> x.countsEveryone()).reduce(0, (a, b) -> a + b));
     }
 
 }

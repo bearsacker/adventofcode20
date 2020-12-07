@@ -8,7 +8,7 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class Main {
+public class Day3 {
 
     public final static List<Vec2> SLOPES = asList(
             new Vec2(1, 1), //

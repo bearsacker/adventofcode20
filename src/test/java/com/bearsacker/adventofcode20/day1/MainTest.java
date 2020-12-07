@@ -13,8 +13,8 @@ public class MainTest {
     public void findTest() {
         List<Integer> numbers = asList(1721, 979, 366, 299, 675, 1456);
 
-        assertEquals(514579, Main.find(2020, numbers, 1));
-        assertEquals(241861950, Main.find(2020, numbers, 2));
+        assertEquals(514579, Day1.find(2020, numbers, 1));
+        assertEquals(241861950, Day1.find(2020, numbers, 2));
     }
 
 }
