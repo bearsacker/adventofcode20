@@ -18,6 +18,7 @@ public class Day5 {
         Collections.sort(boardingPass);
         Collections.reverse(boardingPass);
 
+        System.out.println("\n--- Day 5: Binary Boarding ---");
         System.out.println("Part 1: " + boardingPass.get(0));
 
         Collections.reverse(boardingPass);

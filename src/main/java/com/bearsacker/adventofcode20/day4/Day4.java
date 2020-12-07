@@ -29,6 +29,7 @@ public class Day4 {
 
         reader.close();
 
+        System.out.println("\n--- Day 4: Passport Processing ---");
         System.out.println("Part 1: " + passports.stream().filter(x -> x.isValid(SimplePassportPolicy.get())).count());
         System.out.println("Part 2: " + passports.stream().filter(x -> x.isValid(ComplexPassportPolicy.get())).count());
     }

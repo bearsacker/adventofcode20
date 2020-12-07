@@ -15,26 +15,31 @@ public class Main {
     public static void main(String[] args) throws IOException {
         System.out.println("Advent of Code 2020");
 
-        System.out.println("\n--- Day 1: Report Repair ---");
         Day1.main(args);
-
-        System.out.println("\n--- Day 2: Password Philosophy ---");
         Day2.main(args);
-
-        System.out.println("\n--- Day 3: Toboggan Trajectory ---");
         Day3.main(args);
-
-        System.out.println("\n--- Day 4: Passport Processing ---");
         Day4.main(args);
-
-        System.out.println("\n--- Day 5: Binary Boarding ---");
         Day5.main(args);
-
-        System.out.println("\n--- Day 6: Custom Customs ---");
         Day6.main(args);
-
-        System.out.println("\n--- Day 7: Handy Haversacks ---");
         Day7.main(args);
+        // Day8.main(args);
+        // Day9.main(args);
+        // Day10.main(args);
+        // Day11.main(args);
+        // Day12.main(args);
+        // Day13.main(args);
+        // Day14.main(args);
+        // Day15.main(args);
+        // Day16.main(args);
+        // Day17.main(args);
+        // Day18.main(args);
+        // Day19.main(args);
+        // Day20.main(args);
+        // Day21.main(args);
+        // Day22.main(args);
+        // Day23.main(args);
+        // Day24.main(args);
+        // Day25.main(args);
     }
 
 }

@@ -35,6 +35,7 @@ public class Day2 {
             line = reader.readLine();
         } while (line != null);
 
+        System.out.println("\n--- Day 2: Password Philosophy ---");
         System.out.println("Part 1: " + countValidPasswordFirstPolicy);
         System.out.println("Part 2: " + countValidPasswordSecondPolicy);
 

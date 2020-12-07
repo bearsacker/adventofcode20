@@ -22,6 +22,7 @@ public class Day3 {
         Map map = new Map(reader.lines().collect(Collectors.toList()));
         reader.close();
 
+        System.out.println("\n--- Day 3: Toboggan Trajectory ---");
         int count = map.countTreesForDirection(new Vec2(3, 1));
         System.out.println("Part 1: " + count);
 

@@ -52,6 +52,7 @@ public class Day7 {
             }
         }
 
+        System.out.println("\n--- Day 7: Handy Haversacks ---");
         System.out.println("Part 1: " + count);
         System.out.println("Part 2: " + countBags(rules, rules.get("shiny gold"), true));
     }

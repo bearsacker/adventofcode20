@@ -44,6 +44,7 @@ public class Day1 {
         reader.lines().forEach(x -> numbers.add(parseInt(x)));
         reader.close();
 
+        System.out.println("\n--- Day 1: Report Repair ---");
         System.out.println("Part 1: " + find(2020, numbers, 1));
         System.out.println("Part 2: " + find(2020, numbers, 2));
     }

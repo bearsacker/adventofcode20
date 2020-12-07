@@ -29,6 +29,7 @@ public class Day6 {
 
         reader.close();
 
+        System.out.println("\n--- Day 6: Custom Customs ---");
         System.out.println("Part 1: " + groups.stream().map(x -> x.countsAnyone()).reduce(0, (a, b) -> a + b));
         System.out.println("Part 2: " + groups.stream().map(x -> x.countsEveryone()).reduce(0, (a, b) -> a + b));
     }
