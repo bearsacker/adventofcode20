@@ -1,6 +1,5 @@
 package com.bearsacker.adventofcode20.day1;
 
-import static java.lang.Integer.parseInt;
 import static java.lang.Math.max;
 
 import java.io.BufferedReader;
@@ -8,6 +7,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day1 {
 
@@ -38,10 +38,8 @@ public class Day1 {
     }
 
     public static void main(String[] args) throws IOException {
-        ArrayList<Integer> numbers = new ArrayList<>();
-
         BufferedReader reader = new BufferedReader(new FileReader("day1/input.txt"));
-        reader.lines().forEach(x -> numbers.add(parseInt(x)));
+        List<Integer> numbers = reader.lines().map(Integer::parseInt).collect(Collectors.toList());
         reader.close();
 
         System.out.println("\n--- Day 1: Report Repair ---");

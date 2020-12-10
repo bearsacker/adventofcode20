@@ -3,17 +3,16 @@ package com.bearsacker.adventofcode20.day8;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.LinkedList;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day8 {
 
     public static void main(String[] args) throws IOException {
         System.out.println("\n--- Day 8: Handheld Halting ---");
 
-        LinkedList<Instruction> instructions = new LinkedList<>();
-
         BufferedReader reader = new BufferedReader(new FileReader("day8/input.txt"));
-        reader.lines().forEach(line -> instructions.add(Instruction.parse(line)));
+        List<Instruction> instructions = reader.lines().map(Instruction::parse).collect(Collectors.toList());
         reader.close();
 
         Program program = new Program(instructions);

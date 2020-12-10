@@ -3,16 +3,15 @@ package com.bearsacker.adventofcode20.day5;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class Day5 {
 
     public static void main(String[] args) throws IOException {
-        ArrayList<BoardingPass> boardingPass = new ArrayList<>();
-
         BufferedReader reader = new BufferedReader(new FileReader("day5/input.txt"));
-        reader.lines().forEach(x -> boardingPass.add(new BoardingPass(x)));
+        List<BoardingPass> boardingPass = reader.lines().map(x -> new BoardingPass(x)).collect(Collectors.toList());
         reader.close();
 
         Collections.sort(boardingPass);

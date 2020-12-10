@@ -2,6 +2,7 @@ package com.bearsacker.adventofcode20.day8;
 
 import java.util.HashSet;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Program {
 
@@ -13,8 +14,8 @@ public class Program {
 
     private int accumulator;
 
-    public Program(LinkedList<Instruction> instructions) {
-        this.instructions = instructions;
+    public Program(List<Instruction> instructions) {
+        this.instructions = new LinkedList<>(instructions);
         history = new HashSet<>();
         pointer = 0;
         accumulator = 0;

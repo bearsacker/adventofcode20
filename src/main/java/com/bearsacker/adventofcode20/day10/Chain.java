@@ -1,15 +1,15 @@
 package com.bearsacker.adventofcode20.day10;
 
-import java.util.ArrayList;
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.LinkedList;
+import java.util.List;
 
 public class Chain {
 
     private LinkedList<Integer> jolts;
 
-    public Chain(ArrayList<Integer> numbers) {
+    public Chain(List<Integer> numbers) {
         jolts = new LinkedList<>();
         jolts.add(0);
 
@@ -72,17 +72,6 @@ public class Chain {
         cache.put(current, count);
 
         return count;
-    }
-
-    @Override
-    public String toString() {
-        String result = "";
-
-        for (Integer jolt : jolts) {
-            result += jolt + "-";
-        }
-
-        return result;
     }
 
 }
