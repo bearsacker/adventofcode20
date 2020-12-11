@@ -3,13 +3,15 @@ package com.bearsacker.adventofcode20.day3;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Map {
+import com.bearsacker.adventofcode20.utils.Vec2;
+
+public class Forest {
 
     public final static char TREE = '#';
 
     private List<String> map;
 
-    public Map(List<String> lines) {
+    public Forest(List<String> lines) {
         map = new ArrayList<String>(lines);
     }
 

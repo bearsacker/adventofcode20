@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.List;
 import java.util.stream.Collectors;
 
+import com.bearsacker.adventofcode20.utils.Vec2;
+
 public class Day3 {
 
     public final static List<Vec2> SLOPES = asList(
@@ -19,7 +21,7 @@ public class Day3 {
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new FileReader("day3/input.txt"));
-        Map map = new Map(reader.lines().collect(Collectors.toList()));
+        Forest map = new Forest(reader.lines().collect(Collectors.toList()));
         reader.close();
 
         System.out.println("\n--- Day 3: Toboggan Trajectory ---");

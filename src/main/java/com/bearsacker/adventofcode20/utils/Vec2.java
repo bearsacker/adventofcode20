@@ -1,4 +1,4 @@
-package com.bearsacker.adventofcode20.day11;
+package com.bearsacker.adventofcode20.utils;
 
 
 public class Vec2 {
