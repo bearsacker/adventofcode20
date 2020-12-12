@@ -2,18 +2,18 @@ package com.bearsacker.adventofcode20;
 
 import java.io.IOException;
 
-import com.bearsacker.adventofcode20.day1.Day1;
+import com.bearsacker.adventofcode20.day01.Day1;
+import com.bearsacker.adventofcode20.day02.Day2;
+import com.bearsacker.adventofcode20.day03.Day3;
+import com.bearsacker.adventofcode20.day04.Day4;
+import com.bearsacker.adventofcode20.day05.Day5;
+import com.bearsacker.adventofcode20.day06.Day6;
+import com.bearsacker.adventofcode20.day07.Day7;
+import com.bearsacker.adventofcode20.day08.Day8;
+import com.bearsacker.adventofcode20.day09.Day9;
 import com.bearsacker.adventofcode20.day10.Day10;
 import com.bearsacker.adventofcode20.day11.Day11;
 import com.bearsacker.adventofcode20.day12.Day12;
-import com.bearsacker.adventofcode20.day2.Day2;
-import com.bearsacker.adventofcode20.day3.Day3;
-import com.bearsacker.adventofcode20.day4.Day4;
-import com.bearsacker.adventofcode20.day5.Day5;
-import com.bearsacker.adventofcode20.day6.Day6;
-import com.bearsacker.adventofcode20.day7.Day7;
-import com.bearsacker.adventofcode20.day8.Day8;
-import com.bearsacker.adventofcode20.day9.Day9;
 
 public class Main {
 

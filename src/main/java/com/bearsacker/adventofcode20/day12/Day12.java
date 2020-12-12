@@ -17,8 +17,11 @@ public class Day12 {
 
         Ship ship = new Ship();
         instructions.forEach(instruction -> ship.applyInstruction(instruction));
-
         System.out.println("Part 1: " + ship.getManhattanDistance());
+
+        ship.init();
+        instructions.forEach(instruction -> ship.applyWaypointInstruction(instruction));
+        System.out.println("Part 2: " + ship.getManhattanDistance());
     }
 
 }

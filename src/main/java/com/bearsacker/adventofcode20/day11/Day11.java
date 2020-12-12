@@ -18,7 +18,6 @@ public class Day11 {
         SeatsMap seatsMap = new SeatsMap(lines);
         while (!seatsMap.applyRules(false)) {
         }
-
         System.out.println("Part 1: " + seatsMap.countSeats(SeatsMap.OCCUPIED));
 
         seatsMap = new SeatsMap(lines);
