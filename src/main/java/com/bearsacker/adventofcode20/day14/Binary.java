@@ -1,5 +1,6 @@
 package com.bearsacker.adventofcode20.day14;
 
+import static java.lang.Long.parseLong;
 import static java.lang.Long.toBinaryString;
 import static java.lang.Math.pow;
 
@@ -71,14 +72,7 @@ public class Binary {
     }
 
     public long getLongValue() {
-        long longValue = 0;
-        for (int i = value.length() - 1; i >= 0; i--) {
-            if (value.charAt(i) == '1') {
-                longValue += pow(2, value.length() - 1 - i);
-            }
-        }
-
-        return longValue;
+        return parseLong(value, 2);
     }
 
     public ArrayList<Long> getLongValues() {
