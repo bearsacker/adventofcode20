@@ -35,7 +35,7 @@ public class Day13 {
         // https://en.wikipedia.org/wiki/Chinese_remainder_theorem
         // n = n1 * n2 * ... * ni
         // npi = n / ni
-        // ei = 1 / npi % ni
+        // ei = npi %^-1 ni
         // x = E [npi * ei * resti] % n
 
         for (int i = 1; i < shuttles.size(); i++) {
