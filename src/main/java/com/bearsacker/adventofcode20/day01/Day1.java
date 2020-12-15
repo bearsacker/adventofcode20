@@ -38,7 +38,7 @@ public class Day1 {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("day01/input.txt"));
+        BufferedReader reader = new BufferedReader(new FileReader("2020/day01/input.txt"));
         List<Integer> numbers = reader.lines().map(Integer::parseInt).collect(Collectors.toList());
         reader.close();
 
