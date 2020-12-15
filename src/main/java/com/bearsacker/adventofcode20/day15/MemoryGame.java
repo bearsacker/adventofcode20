@@ -1,65 +1,42 @@
 package com.bearsacker.adventofcode20.day15;
 
-import static java.util.Arrays.asList;
-
 import java.util.HashMap;
 import java.util.List;
 
-import com.bearsacker.adventofcode20.utils.LinkedNonBlockingQueue;
-
 public class MemoryGame {
 
-    private HashMap<Integer, LinkedNonBlockingQueue<Integer>> occurences;
+    private HashMap<Integer, Integer> occurences;
 
     private int lastNumber;
 
-    private int turnNumber;
+    private int turn;
 
     public MemoryGame(List<Integer> firstTurns) {
-        lastNumber = 0;
-        turnNumber = 0;
-
         occurences = new HashMap<>();
-        for (int i = 0; i < firstTurns.size(); i++) {
-            incrementOccurence(firstTurns.get(i), i + 1);
-            lastNumber = firstTurns.get(i);
-            turnNumber++;
+        for (turn = 0; turn < firstTurns.size(); turn++) {
+            lastNumber = firstTurns.get(turn);
+            occurences.put(lastNumber, turn + 1);
         }
     }
 
     public void nextTurn() {
-        turnNumber++;
-        if (countOccurences(lastNumber) == 1) {
-            lastNumber = 0;
-            incrementOccurence(0, turnNumber);
-        } else {
-            int difference = getDifferenceLastTurns(lastNumber);
-            lastNumber = difference;
-            incrementOccurence(difference, turnNumber);
+        int number = 0;
+        if (occurences.containsKey(lastNumber)) {
+            number = turn - occurences.get(lastNumber);
         }
-    }
 
-    public long countOccurences(int value) {
-        return occurences.get(value).size();
+        occurences.put(lastNumber, turn);
+        lastNumber = number;
+
+        turn++;
     }
 
     public int getLastNumber() {
         return lastNumber;
     }
 
-    public int getTurnNumber() {
-        return turnNumber;
+    public int getTurn() {
+        return turn;
     }
 
-    private void incrementOccurence(int value, int turn) {
-        if (occurences.containsKey(value)) {
-            occurences.get(value).add(turn);
-        } else {
-            occurences.put(value, new LinkedNonBlockingQueue<>(asList(turn), 2));
-        }
-    }
-
-    private int getDifferenceLastTurns(int value) {
-        return occurences.get(value).getLast() - occurences.get(value).get(occurences.get(value).size() - 2);
-    }
 }

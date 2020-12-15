@@ -18,13 +18,12 @@ public class Day15 {
 
         List<Integer> turns = Arrays.stream(line.split(",")).map(Integer::parseInt).collect(Collectors.toList());
         MemoryGame game = new MemoryGame(turns);
-        while (game.getTurnNumber() < 2020) {
+        while (game.getTurn() < 2020) {
             game.nextTurn();
         }
-
         System.out.println("Part 1: " + game.getLastNumber());
 
-        while (game.getTurnNumber() < 30000000) {
+        while (game.getTurn() < 30000000) {
             game.nextTurn();
         }
         System.out.println("Part 2: " + game.getLastNumber());
