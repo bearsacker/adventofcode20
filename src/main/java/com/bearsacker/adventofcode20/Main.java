@@ -16,6 +16,7 @@ import com.bearsacker.adventofcode20.day11.Day11;
 import com.bearsacker.adventofcode20.day12.Day12;
 import com.bearsacker.adventofcode20.day13.Day13;
 import com.bearsacker.adventofcode20.day14.Day14;
+import com.bearsacker.adventofcode20.day15.Day15;
 
 public class Main {
 
@@ -36,7 +37,7 @@ public class Main {
         Day12.main(args);
         Day13.main(args);
         Day14.main(args);
-        // Day15.main(args);
+        Day15.main(args);
         // Day16.main(args);
         // Day17.main(args);
         // Day18.main(args);
