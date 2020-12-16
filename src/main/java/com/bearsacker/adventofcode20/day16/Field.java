@@ -9,6 +9,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
+import com.bearsacker.adventofcode20.utils.Interval;
+
 public class Field {
 
     private final static Pattern REGEX_FIELDS = Pattern.compile("^([a-z ]+): ([0-9]+)-([0-9]+) or ([0-9]+)-([0-9]+)$");
@@ -56,7 +58,7 @@ public class Field {
     }
 
     public boolean isValid(Long value) {
-        return intervals.stream().anyMatch(x -> x.isValid(value));
+        return intervals.stream().anyMatch(x -> x.isValueInto(value));
     }
 
     public Integer getPosition() {
