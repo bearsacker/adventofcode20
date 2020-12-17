@@ -17,7 +17,7 @@ public class Field {
 
     private String name;
 
-    private List<Interval> intervals;
+    private List<Interval<Integer>> intervals;
 
     private LinkedList<Integer> positions;
 
@@ -25,8 +25,8 @@ public class Field {
         return lines.stream().map(x -> {
             Matcher matcher = REGEX_FIELDS.matcher(x);
             if (matcher.matches()) {
-                Interval i1 = new Interval(parseInt(matcher.group(2)), parseInt(matcher.group(3)));
-                Interval i2 = new Interval(parseInt(matcher.group(4)), parseInt(matcher.group(5)));
+                Interval<Integer> i1 = new Interval<>(parseInt(matcher.group(2)), parseInt(matcher.group(3)));
+                Interval<Integer> i2 = new Interval<>(parseInt(matcher.group(4)), parseInt(matcher.group(5)));
 
                 return new Field(matcher.group(1), asList(i1, i2));
             }
@@ -35,7 +35,7 @@ public class Field {
         }).filter(x -> x != null).collect(Collectors.toList());
     }
 
-    public Field(String name, List<Interval> intervals) {
+    public Field(String name, List<Interval<Integer>> intervals) {
         this.name = name;
         this.intervals = intervals;
         this.positions = new LinkedList<>();
@@ -49,11 +49,11 @@ public class Field {
         this.name = name;
     }
 
-    public List<Interval> getIntervals() {
+    public List<Interval<Integer>> getIntervals() {
         return intervals;
     }
 
-    public void setIntervals(List<Interval> intervals) {
+    public void setIntervals(List<Interval<Integer>> intervals) {
         this.intervals = intervals;
     }
 
