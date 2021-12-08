@@ -1,4 +1,4 @@
-package com.bearsacker.adventofcode20.utils;
+package com.bearsacker.utils;
 
 import static java.lang.Math.sqrt;
 

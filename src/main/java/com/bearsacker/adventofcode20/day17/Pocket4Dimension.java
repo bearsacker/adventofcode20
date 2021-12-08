@@ -5,8 +5,8 @@ import static java.lang.Integer.compare;
 import java.util.HashMap;
 import java.util.List;
 
-import com.bearsacker.adventofcode20.utils.Interval;
-import com.bearsacker.adventofcode20.utils.Vec4;
+import com.bearsacker.utils.Interval;
+import com.bearsacker.utils.Vec4;
 
 public class Pocket4Dimension {
 

@@ -3,7 +3,7 @@ package com.bearsacker.adventofcode20.day11;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bearsacker.adventofcode20.utils.Vec2;
+import com.bearsacker.utils.Vec2;
 
 public class SeatsMap {
 

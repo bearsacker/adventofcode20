@@ -8,7 +8,7 @@ import java.util.List;
 import org.junit.Test;
 
 import com.bearsacker.adventofcode20.day03.Forest;
-import com.bearsacker.adventofcode20.utils.Vec2;
+import com.bearsacker.utils.Vec2;
 
 public class ForestTest {
 

@@ -7,8 +7,6 @@ import java.util.List;
 
 import org.junit.Test;
 
-import com.bearsacker.adventofcode20.day01.Day1;
-
 public class MainTest {
 
     @Test

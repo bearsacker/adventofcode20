@@ -2,9 +2,9 @@ package com.bearsacker.adventofcode20.day01;
 
 import static java.lang.Math.max;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
+import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
@@ -38,9 +38,7 @@ public class Day1 {
     }
 
     public static void main(String[] args) throws IOException {
-        BufferedReader reader = new BufferedReader(new FileReader("2020/day01/input.txt"));
-        List<Integer> numbers = reader.lines().map(Integer::parseInt).collect(Collectors.toList());
-        reader.close();
+        List<Integer> numbers = Files.lines(new File("2020/day01/input.txt").toPath()).map(Integer::parseInt).collect(Collectors.toList());
 
         System.out.println("\n--- Day 1: Report Repair ---");
         System.out.println("Part 1: " + find(2020, numbers, 1));

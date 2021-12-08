@@ -4,6 +4,8 @@ import static org.junit.Assert.assertEquals;
 
 import org.junit.Test;
 
+import com.bearsacker.utils.Vec2;
+
 public class Vec2Test {
 
     @Test
