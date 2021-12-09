@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import com.bearsacker.adventofcode20.day01.Day1;
 import com.bearsacker.adventofcode21.day02.Day2;
+import com.bearsacker.adventofcode21.day03.Day3;
 
 public class Main {
 
@@ -12,7 +13,7 @@ public class Main {
 
         Day1.main(args);
         Day2.main(args);
-        // Day3.main(args);
+        Day3.main(args);
         // Day4.main(args);
         // Day5.main(args);
         // Day6.main(args);

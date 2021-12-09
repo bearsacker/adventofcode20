@@ -1,9 +1,9 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>com.bearsacker</groupId>
-	<artifactId>adventofcode20</artifactId>
+	<artifactId>adventofcode</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Advent of Code 2020</name>
+	<name>Advent of Code</name>
   
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
